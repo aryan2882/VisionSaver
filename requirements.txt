@@ -4,8 +4,6 @@ astunparse==1.6.3
 cachetools==5.3.2
 certifi==2024.2.2
 charset-normalizer==3.3.2
-controller-manager==0.20.0
-controller-manager-msgs==0.20.0
 cv-bridge==1.16.2
 diagnostic-analysis==1.11.0
 diagnostic-common-diagnostics==1.11.0
