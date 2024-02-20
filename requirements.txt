@@ -4,7 +4,6 @@ astunparse==1.6.3
 cachetools==5.3.2
 certifi==2024.2.2
 charset-normalizer==3.3.2
-diagnostic-analysis==1.11.0
 diagnostic-common-diagnostics==1.11.0
 diagnostic-updater==1.11.0
 Django==5.0.2
