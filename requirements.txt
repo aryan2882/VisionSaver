@@ -37,12 +37,6 @@ tensorflow==2.15.0.post1
 tensorflow-estimator==2.15.0
 tensorflow-io-gcs-filesystem==0.36.0
 termcolor==2.4.0
-tf==1.13.2
-tf-conversions==1.13.2
-tf2-geometry-msgs==0.7.7
-tf2-kdl==0.7.7
-tf2-py==0.7.7
-tf2-ros==0.7.7
 topic-tools==1.16.0
 turtlebot3_teleop==1.2.5
 typing_extensions==4.9.0
