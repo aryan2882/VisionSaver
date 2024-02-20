@@ -37,10 +37,7 @@ tensorflow==2.15.0.post1
 tensorflow-estimator==2.15.0
 tensorflow-io-gcs-filesystem==0.36.0
 termcolor==2.4.0
-topic-tools==1.16.0
-turtlebot3_teleop==1.2.5
 typing_extensions==4.9.0
 urllib3==2.2.1
 Werkzeug==3.0.1
 wrapt==1.14.1
-xacro==1.14.17
