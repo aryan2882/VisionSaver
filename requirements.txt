@@ -26,7 +26,7 @@ pillow==10.2.0
 protobuf==4.25.3
 pyasn1==0.5.1
 pyasn1-modules==0.3.0
-python-qt-binding==0.4.4
+python-qt-binding==0.3.4
 qt-dotgraph==0.4.2
 qt-gui==0.4.2
 qt-gui-cpp==0.4.2
