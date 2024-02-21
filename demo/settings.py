@@ -123,6 +123,7 @@ STATICFILES_DIRS=[
     'var/www/static',
     'staticfiles',
 ]
+CSRF_TRUSTED_ORIGINS = ['https://visionsaver.azurewebsites.net']
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 import os 
