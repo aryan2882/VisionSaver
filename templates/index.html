@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,8 +7,10 @@
     <title>Vision Saver</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #b3e0ff;
+            font-family: Arial, sans-serif;
+            background-image: url("{% static 'rm309-adj-05.jpg' %}");
+            background-size: cover; /* Adjust this based on your needs */
+            background-repeat: no-repeat;
             text-align: center;
             margin: 0;
             padding: 0;
@@ -16,12 +19,12 @@
         h1 {
             color: #4CAF50;
             margin-top: 50px;
-            font-family: 'Verdana', sans-serif;
+            font-family: Verdana, sans-serif;
         }
 
         h2 {
             color: #01579b;
-            font-family: 'Tahoma', sans-serif;
+            font-family: Tahoma, sans-serif;
         }
 
         form {
@@ -38,7 +41,7 @@
             display: block;
             margin-bottom: 10px;
             color: #4CAF50;
-            font-family: 'Tahoma', sans-serif;
+            font-family: Tahoma, sans-serif;
         }
 
         input[type="file"] {
