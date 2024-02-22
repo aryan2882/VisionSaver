@@ -1,3 +1,4 @@
+
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
@@ -8,7 +9,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-image: url("{% static 'rm309-adj-05.jpg' %}");
+            background-image: url("{% static 'firstApp/rm309-adj-05.jpg' %}");
             background-size: cover; /* Adjust this based on your needs */
             background-repeat: no-repeat;
             text-align: center;
@@ -16,16 +17,6 @@
             padding: 0;
         }
 
-        h1 {
-            color: #4CAF50;
-            margin-top: 50px;
-            font-family: Verdana, sans-serif;
-        }
-
-        h2 {
-            color: #01579b;
-            font-family: Tahoma, sans-serif;
-        }
 
         form {
             background-color: #ffffff;
@@ -44,54 +35,35 @@
             font-family: Tahoma, sans-serif;
         }
 
-        input[type="file"] {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            box-sizing: border-box;
-            border: 1px solid #4CAF50;
-            border-radius: 4px;
-            transition: border-color 0.3s;
-        }
 
-        input[type="file"]:hover {
-            border-color: #388e3c;
-        }
-
-        input[type="submit"] {
-            background-color: #4CAF50;
-            color: #ffffff;
-            padding: 12px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 16px;
-            transition: background-color 0.3s;
-        }
-
-        input[type="submit"]:hover {
-            background-color: #388e3c;
-        }
-
-        p {
-            color: #4CAF50;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
     </style>
 </head>
 <body>
+    <div style="width: 208px; height: 72px; display: flex; align-items: center;">
+        <div style="width: 41px; height: 72px; text-align: center; color: #8200A3; font-size: 64px; font-family: Poppins; font-weight: 600; word-wrap: break-word; align-self: center;">V</div>
+        <div style="display: flex; flex-direction: column; justify-content: flex-start; align-self: flex-start; margin-left: 0px;">
+            <div style="color: black; font-size: 24px; font-family: Poppins; font-weight: 600; word-wrap: break-word; align-self: flex-start; margin-top: 10px;">ISION</div>
+            <div style="color: black; font-size: 24px; font-family: Poppins; font-weight: 600; word-wrap: break-word; align-self: flex-start; margin-top: -2px;">SAVER</div>
+        </div>
+    </div>
 
-<h1>Welcome to Retinal disease predictor</h1>
-<h2> Please upload the image below</h2>
-<form method="POST" enctype="multipart/form-data">
-    {% csrf_token %}
-    <input type="file" name="upload" accept=".jpg, .jpeg, .png, .jfif" />
-    <input type="submit" value="submit" />
-</form>
-<br>
-<br>
-<p><p>{{ file_url }}</p></p>
-<p>{{ pred }}</p>
+    <div style="width: 100%; height: 240px; text-align: center"><span style="color: black; font-size: 96px; font-family: Poppins; font-weight: 600; line-height: 99.84px; word-wrap: break-word">Welcome to</span><span style="color: #8200A3; font-size: 96px; font-family: Poppins; font-weight: 600; line-height: 99.84px; word-wrap: break-word"> Retinal disease predictor</span></div>
+    <div style="width: 100%; display: flex; justify-content: center; margin-bottom: 20px;">
+        <div style="width: 1012px; text-align: center; color: black; font-size: 42px; font-family: Poppins; font-weight: 400; line-height: 33.28px; word-wrap: break-word;">Please upload the image below</div>
+    </div>
+    <form method="post" enctype="multipart/form-data";>
+        {% csrf_token %}
+        <div style="display: flex; flex-direction: column; align-items: center;">
+            <label for="upload" style="color: #8200A3; font-family: Tahoma, sans-serif;">Upload Image:</label>
+            <input type="file" id="upload" name="upload" accept=".jpg, .jpeg, .png, .jfif" style="width: 100%; padding: 10px; margin-bottom: 15px; box-sizing: border-box; border: 1px solid #8200A3; border-radius: 4px; transition: border-color 0.3s;">
+            <button type="submit" class="btn btn-success" style="background-color: #8200A3; color: #ffffff; padding: 12px 20px; border: none; border-radius: 20px; cursor: pointer; font-size: 16px; transition: background-color 0.3s;">Submit</button>
+        </div>
+    </form>
+    <br>
+    <br>
+    <p style="color: #8200A3; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">{{ file_url }}</p>
+    
+    <p style="color: #8200A3; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">{{ pred }}</p>
 
 </body>
 </html>
