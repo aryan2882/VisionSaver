@@ -29,7 +29,7 @@ def makepredictions(path):
         "Normal",
         "Diabetic Retinopathy",
         "Glaucoma",
-        "Cataract",
+        "Not an eye Image",
         "AMD",
         "Hypertension",
         "Myopia",
