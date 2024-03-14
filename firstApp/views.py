@@ -45,20 +45,23 @@ def makepredictions(path):
 
 
 def index(request):
+    return render(request,'index.html')
+
+def eye(request):
     if request.method == "POST" and request.FILES['upload']:
         if 'upload' not in request.FILES:
             err='No images selected'
-            return render(request,'index.html',{'err':err})
+            return render(request,'eye.html',{'err':err})
         f = request.FILES['upload']
         if f == '':
             err='No files selected'
-            return render(request,'index.html',{'err':err})
+            return render(request,'eye.html',{'err':err})
         upload=request.FILES['upload']
         fss= FileSystemStorage()
         file=fss.save(upload.name,upload)
         file_url=fss.url(file)
         predictions=makepredictions(os.path.join(media,file))
-        return render(request,'index.html',{'pred':predictions, 'file_url':file_url})
+        return render(request,'eye.html',{'pred':predictions, 'file_url':file_url})
     
     else:
-        return render(request,'index.html')
+        return render(request,'eye.html')
