@@ -31,7 +31,7 @@
         label {
             display: block;
             margin-bottom: 10px;
-            color: #4CAF50;
+            color:#90EE90;
             font-family: Tahoma, sans-serif;
         }
 
@@ -40,7 +40,7 @@
 </head>
 <body>
     <div style="width: 208px; height: 72px; display: flex; align-items: center;">
-        <div style="width: 41px; height: 72px; text-align: center; color: #8200A3; font-size: 64px; font-family: Poppins; font-weight: 600; word-wrap: break-word; align-self: center;">V</div>
+        <div style="width: 41px; height: 72px; text-align: center; color:#90EE90; font-size: 64px; font-family: Poppins; font-weight: 600; word-wrap: break-word; align-self: center;">V</div>
         <div style="display: flex; flex-direction: column; justify-content: flex-start; align-self: flex-start; margin-left: 0px;">
             <div style="color: black; font-size: 24px; font-family: Poppins; font-weight: 600; word-wrap: break-word; align-self: flex-start; margin-top: 10px;">ISION</div>
             <div style="color: black; font-size: 24px; font-family: Poppins; font-weight: 600; word-wrap: break-word; align-self: flex-start; margin-top: -2px;">SAVER</div>
@@ -54,16 +54,16 @@
     <form method="post" enctype="multipart/form-data";>
         {% csrf_token %}
         <div style="display: flex; flex-direction: column; align-items: center;">
-            <label for="upload" style="color: #8200A3; font-family: Tahoma, sans-serif;">Upload Image:</label>
+            <label for="upload" style="color:#90EE90; font-family: Tahoma, sans-serif;">Upload Image:</label>
             <input type="file" id="upload" name="upload" accept=".jpg, .jpeg, .png, .jfif" style="width: 100%; padding: 10px; margin-bottom: 15px; box-sizing: border-box; border: 1px solid #8200A3; border-radius: 4px; transition: border-color 0.3s;">
-            <button type="submit" class="btn btn-success" style="background-color: #8200A3; color: #ffffff; padding: 12px 20px; border: none; border-radius: 20px; cursor: pointer; font-size: 16px; transition: background-color 0.3s;">Submit</button>
+            <button type="submit" class="btn btn-success" style="background-color:#90EE90; color: #ffffff; padding: 12px 20px; border: none; border-radius: 20px; cursor: pointer; font-size: 16px; transition: background-color 0.3s;">Submit</button>
         </div>
     </form>
     <br>
     <br>
-    <p style="color: #8200A3; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">{{ file_url }}</p>
+    <p style="color:#90EE90; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">{{ file_url }}</p>
     
-    <p style="color: #8200A3; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">{{ pred }}</p>
+    <p style="color: #90EE90; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">{{ pred }}</p>
 
 </body>
 </html>
