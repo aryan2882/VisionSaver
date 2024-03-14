@@ -37,7 +37,7 @@ To run Vision Saver locally, follow these steps:
 
 ## Deployment
 
-The Vision Saver application is deployed on Azure for seamless access. You can access the live application at [Vision Saver](http://your-azure-app-url.com).
+The Vision Saver application is deployed on Azure for seamless access. You can access the live application at [Vision Saver](https://visionsaver.azurewebsites.net).
 
 ## Credits
 
